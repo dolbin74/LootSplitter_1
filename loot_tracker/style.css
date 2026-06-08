@@ -1,0 +1,162 @@
+/* Basic page styles */
+body {
+  background: #1a1a2e; /* dark background with good contrast */
+  color: white;
+  font-family: Georgia;
+  padding: 20px;
+  line-height: 1.6; /* helps readability */
+}
+
+/* This hides text visually but still lets screen readers read it.
+   Good for accessibility (ADA/WCAG). */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #f0c040; /* gold color with strong contrast */
+}
+
+/* Layout: two columns */
+.page-layout {
+  display: flex; /* puts the two panels next to each other */
+  gap: 20px;
+}
+
+/* Left form box */
+.form-panel {
+  background: #16213e;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid #333355;
+}
+
+.form-panel h2 {
+  color: #f0c040;
+  margin-bottom: 10px;
+}
+
+/* Form fields */
+.field-group {
+  margin-bottom: 15px;
+}
+
+.field-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #bbbbbb; /* muted but still readable */
+}
+
+.field-group input {
+  width: 100%;
+  padding: 8px;
+  background: #0f3460;
+  border: 1px solid #446688;
+  color: white;
+}
+
+/* Visible focus ring for accessibility (WCAG Focus Visible) */
+.field-group input:focus {
+  outline: 2px solid #f0c040;
+  outline-offset: 2px;
+}
+
+/* Validation message */
+#validation-message {
+  color: #ff6b6b; /* readable red */
+  margin-bottom: 10px;
+}
+
+/* Button */
+#add-btn {
+  width: 100%;
+  padding: 10px;
+  background: #f0c040;
+  border: none;
+  cursor: pointer;
+  color: #1a1a2e; /* dark text on gold = good contrast */
+}
+
+/* Button focus ring for accessibility */
+#add-btn:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Right side results */
+.results-panel {
+  flex: 1;
+}
+
+.loot-list-box,
+.total-box {
+  background: #16213e;
+  padding: 20px;
+  border: 1px solid #333355;
+  margin-bottom: 20px;
+}
+
+.loot-list-box h3,
+.total-box h3 {
+  color: #f0c040;
+  margin-bottom: 10px;
+}
+
+/* Loot list */
+#loot-list {
+  list-style: none;
+  padding: 0;
+}
+
+#loot-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+#loot-list li:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  color: white;
+}
+
+.item-value {
+  color: #f0c040;
+  font-weight: bold;
+}
+
+/* Empty message still readable (contrast OK) */
+.empty-msg {
+  color: #999999;
+  font-style: italic;
+}
+
+/* Total */
+.total-amount {
+  font-size: 1.4rem;
+  color: #f0c040;
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #bbbbbb;
+  font-size: 0.8rem;
+}
+
