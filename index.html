@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Loot Splitter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Dungeon Loot Splitter</h1>
+    </header>
+
+    <main>
+
+        <!-- Party Setup -->
+        <section class="panel" id="partySetupSection">
+            <h2>Party Setup</h2>
+            <label for="partySize">Number of Party Members:</label>
+            <input type="number" id="partySize" min="1">
+            <p id="partyError" class="error"></p>
+        </section>
+
+        <!-- Add Loot -->
+        <section class="panel" id="addLootSection">
+            <h2>Add Loot</h2>
+            <label for="lootName">Loot Name:</label>
+            <input type="text" id="lootName">
+
+            <label for="lootValue">Loot Value:</label>
+            <input type="number" id="lootValue" step="0.01">
+
+            <button id="addLootBtn">Add Loot</button>
+            <p id="lootError" class="error"></p>
+        </section>
+
+        <!-- Loot List -->
+        <section class="panel" id="lootListSection">
+            <h2>Loot List</h2>
+            <ul id="lootList"></ul>
+            <p id="runningTotal">Total Loot: $0.00</p>
+            <p id="lootListMessage" class="info"></p>
+        </section>
+
+        <!-- Split Loot -->
+        <section class="panel" id="splitLootSection">
+            <h2>Split Loot</h2>
+            <button id="splitLootBtn">Split Loot</button>
+
+            <p id="finalTotal">Total Loot: $0.00</p>
+            <p id="perMember">Loot Per Party Member: $0.00</p>
+            <p id="splitError" class="error"></p>
+        </section>
+
+        <!-- Logic Explanation -->
+        <section class="panel reflection" id="logicSection">
+            <h2>Logic Explanation</h2>
+            <p>
+                <!-- You’ll fill this in later with your explanation -->
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
 
