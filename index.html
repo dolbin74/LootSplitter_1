@@ -57,7 +57,14 @@
         <section class="panel reflection" id="logicSection">
             <h2>Logic Explanation</h2>
             <p>
-                <!-- You’ll fill this in later with your explanation -->
+                My application stores all loot items inside an array called <code>lootItems</code>. 
+    Each time the user adds loot, I create an object with a name and value and push it into the array. 
+    I use a traditional <code>for</code> loop inside <code>renderLoot()</code> to calculate the running total 
+    and to build the HTML list of items. I also use another loop inside <code>splitLoot()</code> to calculate 
+    the final total before dividing it by the party size. Conditional logic is used throughout the app to 
+    validate inputs, such as checking for empty loot names, invalid numbers, negative values, missing party 
+    size, or trying to split loot when no items exist. All validation messages appear inside the interface 
+    instead of using alerts.
             </p>
         </section>
 
