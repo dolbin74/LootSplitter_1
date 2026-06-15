@@ -54,10 +54,11 @@
         </section>
 
         <!-- Logic Explanation -->
-        <section class="panel reflection" id="logicSection">
+<section class="panel reflection" id="logicSection">
             <h2>Logic Explanation</h2>
-            <p>
-                My application stores all loot items inside an array called <code>lootItems</code>. 
+<h3>Section 1: Original Features</h3>
+<p>
+    My application stores all loot items inside an array called <code>lootItems</code>. 
     Each time the user adds loot, I create an object with a name and value and push it into the array. 
     I use a traditional <code>for</code> loop inside <code>renderLoot()</code> to calculate the running total 
     and to build the HTML list of items. I also use another loop inside <code>splitLoot()</code> to calculate 
@@ -65,8 +66,17 @@
     validate inputs, such as checking for empty loot names, invalid numbers, negative values, missing party 
     size, or trying to split loot when no items exist. All validation messages appear inside the interface 
     instead of using alerts.
-            </p>
-        </section>
+</p>
+
+<h3>Section 2: Bonus Features</h3>
+<p>
+    I implemented two optional bonus features. First, the application automatically recalculates the loot 
+    split whenever a new loot item is added, as long as the party size is valid. This makes the interface 
+    more dynamic and responsive. Second, I added a guild tax system: if the total loot exceeds 100 gold, 
+    a 10% tax is applied before splitting the loot. The tax amount is displayed to the user. These features 
+    enhance the realism and interactivity of the application.
+ </p>
+</section>
 
     </main>
 
